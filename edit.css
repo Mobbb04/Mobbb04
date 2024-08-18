@@ -1,0 +1,132 @@
+/* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(BGLogin.png);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: #f4f4f4; */
+}
+
+.navbar {
+    padding: 0 40px;
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    background-color: rgba(7, 7, 7, 0.11);
+    border-bottom: 2px solid #ff7200 ;
+    margin-bottom: 50px;
+}
+
+.icon img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.navbar .logo {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu ul li {
+    margin: 0 15px;
+}
+
+.navbar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu ul li a:hover {
+    color: #ff6b6b;
+}
+
+
+/* Content Styles */
+.content {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+    outline: none;
+}
+
+form select {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+    appearance: none; /* Remove default styling in other browsers */
+    background: #f4f4f4 url('arrow-down.svg') no-repeat right center; /* Add a custom arrow */
+    background-size: 16px; /* Size of the custom arrow */
+    padding-right: 40px; /* Space for the custom arrow */
+}
+
+form select option {
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #ff4a4a;
+}

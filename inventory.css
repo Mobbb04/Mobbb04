@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(BGLogin.png);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: #f4f4f4; */
+}
+
+.navbar {
+    padding: 0 40px;
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    background-color: rgba(7, 7, 7, 0.11);
+    border-bottom: 2px solid #ff7200 ;
+    margin-bottom: 40px;
+}
+
+.icon img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.navbar .logo {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu ul li {
+    margin: 0 15px;
+}
+
+.navbar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Content Styles */
+.content {
+    padding: 20px;
+    max-width: 1500px;
+    height: 750px;
+    margin: 0 auto;
+    background: #ffffffa2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+
+}
+
+.content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Inventory Controls */
+.inventory-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inventory-controls input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.inventory-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.inventory-controls button:hover {
+    background: #ff4a4a;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffffb0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Actions */
+table button {
+    padding: 5px 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 5px;
+}
+
+table button:hover {
+    background: #ff6b6b;
+}
+
+
+/* report  */
+
+.report-button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffc107;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.report-button:hover {
+    background-color: #e0a800;
+}
+
+/* Style for the select dropdown */
+.category-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 200px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the select dropdown on hover */
+.category-select:hover {
+    background-color: #eaeaea;
+}
+
+/* Style for the select dropdown on focus */
+.category-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
